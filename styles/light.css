@@ -1,0 +1,67 @@
+/* Light Mode Styles */
+body {
+  background-color: #ffffff;
+  color: #000000;
+  font-family: 'Fira Code', monospace;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #f5f5f5;
+}
+
+.terminal-bar {
+  display: flex;
+  gap: 5px;
+}
+
+.dot {
+  height: 12px;
+  width: 12px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.red { background-color: #ff5f56; }
+.yellow { background-color: #ffbd2e; }
+.green { background-color: #27c93f; }
+
+nav a {
+  color: #007acc;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+button {
+  background-color: #007acc;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #005f9e;
+}
+
+.terminal-window {
+  background-color: #f5f5f5;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 8px;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #f5f5f5;
+}
