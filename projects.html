@@ -5,10 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Projects</title>
   <link id="theme-style" rel="stylesheet" href="styles/dark.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
 
-  <!-- Terminal-inspired Header with Dark/Light Mode Toggle -->
+  <!-- Interactive Background -->
+  <div id="particles-js"></div>
+
+  <!-- Terminal-inspired Header with Sun/Moon Toggle -->
   <header>
     <div class="terminal-bar">
       <span class="dot red"></span>
@@ -19,39 +23,31 @@
       <a href="index.html">Home</a>
       <a href="about.html">About Me</a>
       <a href="skills.html">Skills</a>
+      <a href="projects.html">Projects</a>
       <a href="contact.html">Contact</a>
     </nav>
-    <button id="toggle-theme">Toggle Theme</button>
+
+    <!-- Light/Dark Mode Toggle with Sun/Moon -->
+    <button id="toggle-theme">
+      <i id="theme-icon" class="fas fa-moon"></i>
+    </button>
   </header>
 
-  <!-- Projects Section -->
+  <!-- Projects Content -->
   <section class="terminal-window">
     <h1>&lt;Projects&gt;</h1>
-
-    <div class="project">
-      <h2>Project 1: My Awesome Web App</h2>
-      <p>Technologies: React, Node.js, MongoDB</p>
-      <a href="https://github.com/mygithub/my-awesome-web-app" target="_blank">View on GitHub</a>
-    </div>
-
-    <div class="project">
-      <h2>Project 2: E-commerce Platform</h2>
-      <p>Technologies: Django, PostgreSQL, Stripe API</p>
-      <a href="https://github.com/mygithub/ecommerce-platform" target="_blank">View on GitHub</a>
-    </div>
-
-    <div class="project">
-      <h2>Project 3: Personal Blog</h2>
-      <p>Technologies: Flask, SQLite</p>
-      <a href="https://github.com/mygithub/personal-blog" target="_blank">View on GitHub</a>
-    </div>
+    <ul>
+      <li><strong>Project 1:</strong> A web app built with React and Node.js.</li>
+      <li><strong>Project 2:</strong> A Python-based script for automation tasks.</li>
+      <li><strong>Project 3:</strong> A full-stack application using Django and PostgreSQL.</li>
+    </ul>
   </section>
 
-  <!-- Footer -->
   <footer>
     <p>&copy; 2024 My Portfolio</p>
   </footer>
 
+  <script src="scripts/particles.min.js"></script>
   <script src="scripts/scripts.js"></script>
 </body>
 </html>
