@@ -5,10 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contact</title>
   <link id="theme-style" rel="stylesheet" href="styles/dark.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
 
-  <!-- Terminal-inspired Header with Dark/Light Mode Toggle -->
+  <!-- Interactive Background -->
+  <div id="particles-js"></div>
+
+  <!-- Terminal-inspired Header with Sun/Moon Toggle -->
   <header>
     <div class="terminal-bar">
       <span class="dot red"></span>
@@ -20,32 +24,31 @@
       <a href="about.html">About Me</a>
       <a href="skills.html">Skills</a>
       <a href="projects.html">Projects</a>
+      <a href="contact.html">Contact</a>
     </nav>
-    <button id="toggle-theme">Toggle Theme</button>
+
+    <!-- Light/Dark Mode Toggle with Sun/Moon -->
+    <button id="toggle-theme">
+      <i id="theme-icon" class="fas fa-moon"></i>
+    </button>
   </header>
 
-  <!-- Contact Section -->
+  <!-- Contact Content -->
   <section class="terminal-window">
-    <h1>&lt;Contact&gt;</h1>
-    <form action="https://example.com/contact" method="POST">
-      <label for="name">Name:</label><br>
-      <input type="text" id="name" name="name" required><br>
-      
-      <label for="email">Email:</label><br>
-      <input type="email" id="email" name="email" required><br>
-      
-      <label for="message">Message:</label><br>
-      <textarea id="message" name="message" rows="5" required></textarea><br>
-
-      <button type="submit">Send Message</button>
-    </form>
+    <h1>&lt;Contact Me&gt;</h1>
+    <p>You can reach me via email at [your-email@example.com] or follow me on social media.</p>
+    <ul>
+      <li><a href="https://github.com/yourusername">GitHub</a></li>
+      <li><a href="https://www.linkedin.com/in/yourname">LinkedIn</a></li>
+      <li><a href="https://twitter.com/yourusername">Twitter</a></li>
+    </ul>
   </section>
 
-  <!-- Footer -->
   <footer>
     <p>&copy; 2024 My Portfolio</p>
   </footer>
 
+  <script src="scripts/particles.min.js"></script>
   <script src="scripts/scripts.js"></script>
 </body>
 </html>
