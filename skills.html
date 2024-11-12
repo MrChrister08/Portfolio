@@ -5,10 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Skills</title>
   <link id="theme-style" rel="stylesheet" href="styles/dark.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
 
-  <!-- Terminal-inspired Header with Dark/Light Mode Toggle -->
+  <!-- Interactive Background -->
+  <div id="particles-js"></div>
+
+  <!-- Terminal-inspired Header with Sun/Moon Toggle -->
   <header>
     <div class="terminal-bar">
       <span class="dot red"></span>
@@ -18,30 +22,32 @@
     <nav>
       <a href="index.html">Home</a>
       <a href="about.html">About Me</a>
+      <a href="skills.html">Skills</a>
       <a href="projects.html">Projects</a>
       <a href="contact.html">Contact</a>
     </nav>
-    <button id="toggle-theme">Toggle Theme</button>
+
+    <!-- Light/Dark Mode Toggle with Sun/Moon -->
+    <button id="toggle-theme">
+      <i id="theme-icon" class="fas fa-moon"></i>
+    </button>
   </header>
 
-  <!-- Skills Section -->
+  <!-- Skills Content -->
   <section class="terminal-window">
     <h1>&lt;Skills&gt;</h1>
     <ul>
-      <li>JavaScript (React, Node.js)</li>
-      <li>Python (Django, Flask)</li>
-      <li>HTML5/CSS3</li>
-      <li>SQL/NoSQL Databases</li>
-      <li>Version Control (Git)</li>
-      <li>API Development and Integration</li>
+      <li><strong>Languages:</strong> JavaScript, Python, C++, HTML, CSS</li>
+      <li><strong>Frameworks:</strong> React, Node.js, Django</li>
+      <li><strong>Tools:</strong> Git, Docker, VS Code, GitHub</li>
     </ul>
   </section>
 
-  <!-- Footer -->
   <footer>
     <p>&copy; 2024 My Portfolio</p>
   </footer>
 
+  <script src="scripts/particles.min.js"></script>
   <script src="scripts/scripts.js"></script>
 </body>
 </html>
