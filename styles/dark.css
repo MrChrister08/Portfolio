@@ -1,0 +1,67 @@
+/* Dark Mode Styles */
+body {
+  background-color: #1e1e1e;
+  color: #ffffff;
+  font-family: 'Fira Code', monospace;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #2d2d2d;
+}
+
+.terminal-bar {
+  display: flex;
+  gap: 5px;
+}
+
+.dot {
+  height: 12px;
+  width: 12px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.red { background-color: #ff5f56; }
+.yellow { background-color: #ffbd2e; }
+.green { background-color: #27c93f; }
+
+nav a {
+  color: #9CDCFE;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+.terminal-window {
+  background-color: #2d2d2d;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 8px;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #2d2d2d;
+}
