@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact</title>
+  <link id="theme-style" rel="stylesheet" href="styles/dark.css">
+</head>
+<body>
+
+  <!-- Terminal-inspired Header with Dark/Light Mode Toggle -->
+  <header>
+    <div class="terminal-bar">
+      <span class="dot red"></span>
+      <span class="dot yellow"></span>
+      <span class="dot green"></span>
+    </div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About Me</a>
+      <a href="skills.html">Skills</a>
+      <a href="projects.html">Projects</a>
+    </nav>
+    <button id="toggle-theme">Toggle Theme</button>
+  </header>
+
+  <!-- Contact Section -->
+  <section class="terminal-window">
+    <h1>&lt;Contact&gt;</h1>
+    <form action="https://example.com/contact" method="POST">
+      <label for="name">Name:</label><br>
+      <input type="text" id="name" name="name" required><br>
+      
+      <label for="email">Email:</label><br>
+      <input type="email" id="email" name="email" required><br>
+      
+      <label for="message">Message:</label><br>
+      <textarea id="message" name="message" rows="5" required></textarea><br>
+
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2024 My Portfolio</p>
+  </footer>
+
+  <script src="scripts/scripts.js"></script>
+</body>
+</html>
