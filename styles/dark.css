@@ -1,67 +1,62 @@
-/* Dark Mode Styles */
+/* Base styling for dark mode */
 body {
-  background-color: #1e1e1e;
+  background-color: #121212;
   color: #ffffff;
-  font-family: 'Fira Code', monospace;
+  font-family: 'Courier New', Courier, monospace;
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
+}
+
+#particles-js {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
 }
 
 header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px 20px;
-  background-color: #2d2d2d;
+  background-color: #333;
+  padding: 10px;
+  text-align: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10;
 }
-
-.terminal-bar {
-  display: flex;
-  gap: 5px;
-}
-
-.dot {
-  height: 12px;
-  width: 12px;
-  border-radius: 50%;
-  display: inline-block;
-}
-
-.red { background-color: #ff5f56; }
-.yellow { background-color: #ffbd2e; }
-.green { background-color: #27c93f; }
 
 nav a {
-  color: #9CDCFE;
-  margin: 0 10px;
+  margin: 0 15px;
+  color: #fff;
   text-decoration: none;
+  font-size: 1.2rem;
 }
 
-nav a:hover {
-  text-decoration: underline;
-}
-
-button {
-  background-color: #4CAF50;
-  color: white;
+#toggle-theme {
+  background: none;
   border: none;
-  padding: 10px;
   cursor: pointer;
+  font-size: 1.5rem;
+  color: #fff;
 }
 
-button:hover {
-  background-color: #45a049;
-}
-
-.terminal-window {
-  background-color: #2d2d2d;
-  padding: 20px;
-  margin: 20px;
-  border-radius: 8px;
+#toggle-theme .fa-sun, #toggle-theme .fa-moon {
+  transition: color 0.3s ease;
 }
 
 footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
   text-align: center;
   padding: 20px;
-  background-color: #2d2d2d;
+}
+
+body.dark-mode #toggle-theme {
+  color: #fff;
+}
+
+/* Additional specific styles */
+body.dark-mode #particles-js {
+  background-color: #1a1a1a;
 }
